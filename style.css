@@ -4,9 +4,38 @@
   box-sizing: border-box;
 }
 
+.fixed-skin-buynow {
+  position: fixed;
+  padding: 14px 5px 9px;
+  text-align: center;
+  font-family: "Public sans";
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 100px;
+  top: 0;
+  right: 0;
+}
+.skin-fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  background-color: #ff833b;
+  width: 80px;
+  height: 80px;
+}
+.buynow-fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #07ca6c;
+  width: 80px;
+  height: 80px;
+}
+
 /* Home Page  */
 .homepage {
-  position: relative;
+  /* position: relative; */
   background-color: rgb(113, 54, 6);
   background: linear-gradient(rgba(54, 44, 44, 0.5), rgba(34, 28, 28, 0.5)),
     url("assets/home-main-image.webp");
@@ -27,10 +56,12 @@
   padding: 20px;
   max-height: 5%;
 }
+
 .mainLogo {
   width: 25%;
   height: 10%;
 }
+
 .nav-bar-page-links {
   display: flex;
   flex-wrap: wrap;
@@ -38,17 +69,20 @@
   width: 45%;
   height: 5%;
 }
+
 .nav-menu {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   font-family: "Public Sans";
   text-decoration: none;
   font-size: 16px;
   color: #ffffff;
 }
+
 .nav-menu:hover {
   color: #b0c4bb;
 }
+
 .searchBar-bookingAppoinments {
   display: flex;
   flex-wrap: wrap;
@@ -56,6 +90,7 @@
   align-items: center;
   min-width: 30%;
 }
+
 .search-bar {
   display: flex;
   width: 25px;
@@ -65,6 +100,7 @@
 .booking-Appoinment-Button {
   display: flex;
 }
+
 .appoinment-Btn {
   display: flex;
   align-items: center;
@@ -82,11 +118,12 @@
   height: 50px;
 }
 
-.appoinment-Btn:hover .arrow-button {
+.appoinment-Btn:hover .arw-btn {
   background-color: white;
-  content: url(assets/arrow-button-home-black.png);
+  content: url(assets/icons/arrow-button-home-black.png);
   background-size: cover;
 }
+
 .appoinment-Btn:hover {
   background-color: white;
   color: #1c1d1c;
@@ -97,16 +134,19 @@
   transition: 1s;
   padding: 90px 80px;
 }
+
 .patients-number-home {
   display: flex;
   align-items: center;
   width: 50%;
 }
+
 .five-star {
   margin: 0px;
   width: 110px;
   height: 40px;
 }
+
 .patientsnum {
   margin: 0px;
   padding: 20px;
@@ -114,6 +154,7 @@
   font-size: 16px;
   color: #b0c4bb;
 }
+
 .main-name-heading-home {
   margin: 0px;
   border: 0px;
@@ -122,17 +163,21 @@
   font-size: 70px;
   color: #ffffff;
 }
+
 .name-desc {
   margin: 0px;
   font-family: "Public Sans";
   font-size: 20px;
   color: #b0c4bb;
 }
+
+/* Address and Phone number details */
 .details-main-home {
   display: flex;
   justify-content: space-evenly;
   margin-top: 10px;
 }
+
 .phonenumber-home,
 .openingtiming-home,
 .address-home {
@@ -145,39 +190,894 @@
   padding: 30px;
 }
 
+/* Welcome page */
 .welcome-page {
   flex-wrap: wrap;
   margin: 80px 0px;
   padding: 40px;
 }
-.welcome-container{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: center;
-padding: 0px 300px;
-width: 100%;
-row-gap: 30px;
-  
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 300px;
+  width: 100%;
+  row-gap: 30px;
 }
-.welcome-heading{
-  font-family: 'Tensor sans';
+
+.welcome-heading {
+  font-family: "Tensor sans";
   font-size: 24px;
   color: #b7aca0;
   text-align: center;
   letter-spacing: 1px;
 }
-.treatments-provide{
-  font-family: 'Tensor Sans';
+
+.treatments-provide {
+  font-family: "Tensor Sans";
   font-size: 60px;
-color: #4e4e53;
-text-align: center;
-letter-spacing: 2px;
+  color: #4e4e53;
+  text-align: center;
+  letter-spacing: 2px;
 }
-.treatments-description{
-  font-family: 'Public sans';
+
+.treatments-description {
+  font-family: "Public sans";
   font-size: 20px;
   color: #687268;
-text-align: center;
-font-weight: lighter;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* Common Conditions */
+.common-conditions-main-bg-container {
+  padding: 0px 40px;
+  background: linear-gradient(
+      rgba(125, 141, 138, 0.07),
+      rgba(130, 146, 141, 0.134)
+    ),
+    url("assets/common-conditions/common-conditions-bg.webp");
+  height: 1040px;
+  margin: 0px 0px 240px;
+}
+
+.conditions-container {
+  margin: 0px 68px;
+  padding: 130px 0px;
+}
+
+.common-conditions-header {
+  max-width: 50%;
+}
+
+.common-conditions {
+  font-family: "Public sans";
+  font-size: 14px;
+  color: #687276;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.conditions-header {
+  font-family: "Tensor sans";
+  font-size: 55px;
+  margin-bottom: 68px;
+  color: #4d5558;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+/* Drop down and images, common condition */
+.drop-down-common-conditions {
+  display: flex;
+  width: 100%;
+}
+
+.drops-container {
+  width: 50%;
+}
+
+.drop {
+  font-family: "Tensor sans";
+  font-size: 28px;
+  color: #4e4e53;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  width: 90%;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.drop:hover {
+  background-color: #b0c4bb;
+}
+
+/* Drop Image Section */
+.drop-section-image {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  scroll-margin: 20px;
+}
+
+.drop-down-image {
+  position: absolute;
+  height: 760px;
+  border-radius: 15px 15px 300px 300px;
+}
+
+/* review section */
+.review-section-page {
+  padding: 0px 40px;
+  margin: 0px 0px 150px;
+}
+
+/* Review Header */
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 68px;
+}
+
+.review-header-name {
+  font-family: "tensor Sans";
+  font-weight: 400;
+  font-size: 55px;
+  color: #4e4e53;
+}
+
+.more-review-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #b0c4bb;
+  color: #ffffff;
+  font-family: "Public sans";
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  padding: 30px;
+  width: 250px;
+  height: 55px;
+}
+
+.review-arrow-button {
+  width: 21px;
+  height: 22px;
+}
+
+.more-review-button:hover {
+  border: 1px solid #b0c4bb;
+  background-color: #ffffff;
+  color: #2b2c2b;
+}
+
+.more-review-button:hover .review-arrow-button {
+  background-color: white;
+  content: url(assets/icons/arrow-button-home-black.png);
+  width: 21px;
+  height: 22px;
+}
+
+/* Review Section images */
+.review-images-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 70px 68px 0px;
+}
+
+.review-image-container1,
+.review-image-container2,
+.review-image-container3 {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  width: 30%;
+  height: auto;
+}
+
+.reviewImages {
+  position: relative;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.reviewImages:hover {
+  transition: 0.5s;
+}
+
+.review-container1,
+.review-container2,
+.review-container3 {
+  position: absolute;
+  width: 20%;
+  padding: 30px;
+  border-radius: 30px 0px 30px 0px;
+  background-color: #eff6f4;
+}
+
+.review {
+  font-family: "public Sans";
+  font-size: 18px;
+  color: #687276;
+  padding: 20px 0px;
+}
+
+.reviwer-name {
+  font-family: "public sans";
+  font-size: 15px;
+  font-weight: 600;
+  color: #4e4e53;
+}
+
+.fivestars {
+  width: 120px;
+  height: 40px;
+}
+
+/* OUR PHILOSOPHY */
+.our-Philosophy {
+  margin-bottom: 150px;
+}
+
+.feel-better-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 150px;
+}
+
+.better-header {
+  font-family: "Tensor sans";
+  letter-spacing: 4px;
+  word-spacing: 5px;
+  color: #b0c4bb;
+  font-size: 120px;
+}
+
+.better-image {
+  width: 120px;
+  height: 120px;
+}
+
+/* our philosophy desc and image */
+.desc-container {
+  display: flex;
+  /* max-height: auto; */
+}
+
+.image-container-ourphilosophy {
+  max-width: 50%;
+  max-height: 712px;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  /* background-image: url(assets/ourphilosophy/bg-img-philosophy.webp); */
+  background: linear-gradient(
+      rgba(175, 156, 135, 0.581),
+      rgba(179, 167, 151, 0.574)
+    ),
+    url("assets/ourphilosophy/bg-img-philosophy.webp");
+  align-items: end;
+  padding: 80px;
+  max-width: 50%;
+}
+
+.philosophy-img {
+  width: 100%;
+}
+
+.philosophy-desc {
+  font-family: "Tensor Sans";
+  font-size: 30px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.philosophy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #b0c4bb;
+  background-color: #ffffff;
+  color: #2b2c2b;
+  font-family: "Public sans";
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  padding: 25px;
+  width: 250px;
+  height: 55px;
+}
+
+.review-arrow-button {
+  width: 21px;
+  height: 22px;
+}
+
+.philosophy-btn:hover {
+  background-color: #b0c4bb;
+  color: #ffffff;
+}
+
+.philosophy-btn:hover .review-arrow-button {
+  background-color: #b0c4bb;
+  content: url(assets/icons/arrow-button-home-white.webp);
+  width: 21px;
+  height: 22px;
+}
+
+.betterTodayimg {
+  position: absolute;
+}
+
+/* service page */
+.service-page {
+  padding: 0px 40px;
+  margin: 0px 0px 100px;
+}
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 80px;
+}
+
+/* service header */
+.service-header {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.main-header-service,
+.desc-header-service {
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  width: 50%;
+}
+
+.header-service {
+  font-family: "Tensor Sans";
+  color: #50595c;
+  font-size: 60px;
+}
+
+.desc-head {
+  display: flex;
+  justify-content: center;
+  font-family: "Public Sans";
+  color: #687268;
+  font-size: 20px;
+}
+
+/* service image */
+.service-thumbnail-image {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+.Thumbnail-image-service {
+  position: absolute;
+  box-shadow: 2px 2px 5px 1px rgba(52, 52, 52, 0.471);
+  border-radius: 30px;
+}
+
+/* Question-page */
+.question-page {
+  background: linear-gradient(
+      rgba(239, 246, 244, 0.471),
+      rgba(239, 246, 244, 0.51)
+    ),
+    url("assets/questionPageLogo/question-service-bg.webp");
+  padding: 300px 40px 80px;
+}
+
+.question-container-header-questions {
+  display: flex;
+  width: 100%;
+}
+
+.question-container {
+  /* display: flex; */
+  margin-left: 70px;
+  padding-left: 50px;
+  width: 50%;
+}
+
+/* 
+.question-header { 
+  
+} */
+.small-head-questions {
+  font-family: "Public Sans";
+  font-size: 14px;
+  color: #687276;
+  letter-spacing: 2px;
+}
+
+.main-head-questions {
+  font-family: "Tensor Sans";
+  font-size: 60px;
+  color: #4e4e53;
+  margin: 25px 0px;
+}
+
+.questions-desc {
+  margin-right: 100px;
+  width: 50%;
+}
+
+.question-dropdown {
+  padding: 25px 0px;
+  font-family: "Tensor sans";
+  font-size: 24px;
+  color: #4e4e53;
+  word-spacing: 1px;
+  border-bottom: 1px solid #4e4e5350;
+}
+
+.question-page-logo-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 150px 10px 0px;
+  width: 100%;
+}
+
+.question-logo {
+  color: #4e4e53;
+}
+
+/* health care page */
+.healthcare-section {
+  padding: 30px;
+  margin-bottom: 120px;
+}
+
+.healthcare-container {
+  background: linear-gradient(rgba(54, 44, 44, 0.5), rgba(34, 28, 28, 0.5)),
+    url("assets/health.image.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 20%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.small-heading-health {
+  font-family: "Tensor Sans";
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-heading-health {
+  font-family: "Tensor Sans";
+  font-size: 64px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.health-button {
+  width: 300px;
+}
+
+.appoinment-Btn:hover .arrow-button {
+  background-color: white;
+  content: url(assets/icons/arrow-button-home-black.png);
+  background-size: cover;
+}
+
+.appoinment-Btn:hover {
+  background-color: white;
+  color: #1c1d1c;
+}
+
+/* Wellness Blog */
+.welcome-blog-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 80px;
+  margin-bottom: 150px;
+}
+
+.wellness-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 130px;
+}
+
+.small-header-wellness {
+  font-family: "Tensor Sans";
+  font-size: 25px;
+  color: #b7aca0;
+  letter-spacing: 2px;
+}
+
+.main-header-wellness {
+  font-family: "Tensor Sans";
+  font-size: 65px;
+  color: #4e4e53;
+  letter-spacing: 2px;
+}
+
+/* image-desc-wellness-blog */
+.image-desc-wellness-blog {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.wellness-container-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.wellness-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #2b2c2b;
+}
+
+.container-desc-wellness {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #eff6f4;
+  border-radius: 0px 0px 20px 20px;
+  min-height: 200px;
+  padding: 50px;
+}
+
+.wellness-name {
+  font-family: "Tensor Sans";
+  font-size: 24px;
+  color: #4e4e53;
+}
+
+.readmore-wellness {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Tensor Sans";
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #4e4e53;
+}
+
+.readmore-wellness:hover {
+  color: #7e9a8e;
+}
+
+.readmore-wellness:hover .arrow-button {
+  content: url(assets/icons/arrow-icon-green.webp.png);
+  width: 22px;
+  height: 23px;
+}
+
+.wellness {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b0c4bb;
+  color: #ffffff;
+  width: 150px;
+  height: 25px;
+  border-radius: 30px;
+  font-family: "Public Sans";
+  font-size: 14px;
+  margin: 25px 0px 0px 25px;
+}
+
+.view-more-wellness {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #708e86;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-family: "Public Sans";
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  border-radius: 30px;
+  padding: 15px 30px;
+  width: 250px;
+  height: 50px;
+  margin-top: 60px;
+}
+
+.view-more-wellness:hover {
+  background-color: #b0c4bb;
+}
+
+/* Specialist and Price guide */
+.team-price-main-container {
+  padding: 0px 40px;
+  margin-bottom: 150px;
+}
+
+.team-price-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.pcont {
+  border-radius: 30px;
+  width: 42%;
+  min-height: 700px;
+  padding: 60px;
+}
+
+.team-container {
+  background: linear-gradient(rgba(54, 44, 44, 0.203), rgba(34, 28, 28, 0.282)),
+    url("assets/team-price/chooseSpecialist.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.price-container {
+  background: linear-gradient(rgba(54, 44, 44, 0.456), rgba(34, 28, 28, 0.5)),
+    url("assets/team-price/prices-specialist.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.team-container-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pcont:hover .arrow-button {
+  background-color: white;
+  content: url(assets/icons/arrow-button-home-black.png);
+  width: 22px;
+}
+
+.pcont:hover .team-price-btn {
+  background-color: white;
+  color: #1c1d1c;
+}
+
+.main-header-team {
+  font-family: "Tensor Sans";
+  font-size: 54px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin: 165px 0px 10px;
+}
+
+.desc-team {
+  font-family: "Tensor Sans";
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin: 10px 0px 165px;
+}
+
+.price-btn {
+  background-color: #ffffff;
+  color: #708e86;
+}
+
+.arw-btn {
+  width: 22px;
+  height: 22px;
+}
+
+.pcont:hover .price-btn {
+  background-color: #708e86;
+  color: white;
+}
+
+.pcont:hover .arw-btn {
+  background-color: #708e86;
+  content: url(assets/icons/arrow-button-home-white.webp);
+  width: 22px;
+}
+
+/* footer section */
+.footer-section {
+  background-image: url(assets/footer/footer-bg.webp);
+  background-color: rgb(99, 100, 87, 0.8);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  padding: 80px 80px 0px;
+}
+
+.footer-desc-header {
+  margin: 0px 40px;
+}
+
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgb(164, 166, 145);
+}
+
+.main-header-footer {
+  font-family: "Tensor Sans";
+  font-size: 42px;
+  color: #ffffff;
+  width: 45%;
+}
+
+.input-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 36%;
+}
+
+.email-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  font-family: "Public Sans";
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 15px 30px;
+  width: 400px;
+  height: 50px;
+}
+
+.btn-submit-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b0c4bb;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.btn-submit-footer:hover {
+  background-color: #ffffff;
+}
+.btn-submit-footer:hover .arw-btn {
+  content: url(assets/icons/arrow-button-home-black.png);
+  background-color: white;
+}
+.footer-description {
+  display: flex;
+  margin: 70px 0px 0px;
+  width: 100%;
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgb(164, 166, 145);
+}
+
+.logo-icons-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+}
+.footer-logo {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 50px;
+}
+.footer-desc-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.column-header-footer {
+  font-family: "Tensor Sans";
+  font-size: 26px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  padding: 20px 0px;
+}
+.links-li-footer {
+  font-family: "Public sans";
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 100;
+  list-style-type: none;
+  padding: 0px;
+}
+.links-li-footer li {
+  padding: 10px 0px;
+}
+
+.dir-phn-em-footer {
+  font-family: "public Sans";
+  font-size: 18px;
+  color: #ffffff;
+  padding: 10px 0px;
+}
+.dir-phn-em-footer:hover {
+  color: #b0c4bb;
+}
+.address {
+  font-family: "public Sans";
+  font-size: 18px;
+  color: #bfcac4;
+  padding: 20px 0px;
+}
+
+.copyright-footer {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+}
+.copyright {
+  font-family: "Public sans";
+  font-size: 16px;
+  color: #ffffff99;
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo-icons {
+  width: 25px;
+  height: 25px;
+}
+.links-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b0c4bb;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.links-icon:hover {
+  background-color: #ffffff;
+}
+.links-icon:hover .links-icon1 {
+  background-color: white;
+  content: url(assets/footer/fb-black.png);
+  width: 25px;
+  height: 25px;
+}
+.links-icon:hover .links-icon2 {
+  background-color: white;
+  content: url(assets/footer/insta-black.png);
+  width: 25px;
+  height: 25px;
+}
+.links-icon:hover .links-icon3 {
+  background-color: white;
+  content: url(assets/footer/x-black.png);
+  width: 25px;
+  height: 25px;
 }
