@@ -228,6 +228,70 @@
   font-weight: lighter;
 }
 
+/* Image Slides */
+.image-slides-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0px;
+  width: 100%;
+}
+.slide-container:hover{
+  background-color: #b0c4bb;
+}
+.slide-container {
+  display: flex;
+  align-items: end;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #07ca6c;
+  height: 450px;
+  margin: 5px;
+  border-radius: 30px;
+}
+.cont-1 {
+  background: linear-gradient(rgba(54, 44, 44, 0.5), rgba(34, 28, 28, 0.5)),
+    url("assets/services-slide-images/manualTherapy-slide.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cont-2 {
+  background: linear-gradient(rgba(54, 44, 44, 0.5), rgba(34, 28, 28, 0.5)),
+    url("assets/services-slide-images/lymphaticDrainage-webp.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cont-3 {
+  background: linear-gradient(rgba(54, 44, 44, 0.5), rgba(34, 28, 28, 0.5)),
+    url("assets/services-slide-images/pilates-slide.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cont-4 {
+  background: linear-gradient(rgba(54, 44, 44, 0.5), rgba(34, 28, 28, 0.5)),
+    url("assets/services-slide-images/oesteopathy-slide.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cont-5 {
+  background: linear-gradient(rgba(54, 44, 44, 0.5), rgba(34, 28, 28, 0.5)),
+    url("assets/services-slide-images/massage-slide.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header{
+  font-family: "Tensor sans";
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  padding: 50px;
+}
+
 /* Common Conditions */
 .common-conditions-main-bg-container {
   padding: 0px 40px;
@@ -448,7 +512,6 @@
   width: 100%;
   padding: 0px 40px;
   height: 650px;
-
 }
 
 .image-container-ourphilosophy {
@@ -518,7 +581,6 @@
 }
 
 .betterTodayimg {
- 
   position: absolute;
 }
 
@@ -917,7 +979,7 @@
   padding: 80px 80px 0px;
 }
 
-.footer-desc-header {
+#footer-desc-header {
   margin: 0px 40px;
 }
 
@@ -1085,7 +1147,7 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   /* HOME PAGE */
   .homepage {
     margin: 0px;
@@ -1104,10 +1166,9 @@
   .booking-Appoinment-Button,
   .details-main-home,
   br,
-  .question-logo, 
+  .question-logo,
   .question-page-logo-container,
-  .wellness  {
-    
+  .wellness {
     display: none;
   }
   .main-name-container {
@@ -1128,7 +1189,7 @@
   }
 
   /* Welcome Page */
-  .welcome-page {
+  #welcome-page {
     margin: 0px;
     padding: 20px;
   }
@@ -1158,7 +1219,12 @@
     word-spacing: 0px;
     margin-bottom: 40px;
   }
+  .image-slides-container{
+    display: inline;
+  }
+  .header{
 
+  }
   .common-conditions-header {
     max-width: 100%;
   }
@@ -1183,7 +1249,7 @@
   }
   .drop-down-image {
     content: url(assets/common-conditions/common-condition-image-2.webp.jpg);
-    margin-top: 60px ;
+    margin-top: 60px;
     width: 100%;
     border-radius: 150px 150px 560px 560px;
     height: 406px;
@@ -1237,93 +1303,92 @@
     border-radius: 30px 30px 0px 0px;
   }
 
-  
-/* OUR PHILOSOPHY */
-.our-Philosophy {
-  margin-bottom: 60px;
-}
-.feel-better-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 80px;
-}
-.better-header{
-  font-size: 50px;
-  word-spacing: 0px;
-  letter-spacing: 0px;
-  text-align: center;
-}
-.better-image{
-  width: 40px;
-  height: 40px;
-}
-.desc-container{
-display: inline;
-}
-.image-container-ourphilosophy,
-.description-container{
-  width: 100%;
-  margin: 0px;
-}
-.description-container{
-  padding: 50px;
-}
-.philosophy-desc{
-  font-size: 25px;
-  letter-spacing: 1px;
-}
- /* service page */ 
- .service-section{
-  margin: 0px;
-  padding: 0px 40px;
- }
- .service-header{
-  display: inline;
- }
+  /* OUR PHILOSOPHY */
+  .our-Philosophy {
+    margin-bottom: 60px;
+  }
+  .feel-better-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 80px;
+  }
+  .better-header {
+    font-size: 50px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .better-image {
+    width: 40px;
+    height: 40px;
+  }
+  .desc-container {
+    display: inline;
+  }
+  .image-container-ourphilosophy,
+  .description-container {
+    width: 100%;
+    margin: 0px;
+  }
+  .description-container {
+    padding: 50px;
+  }
+  .philosophy-desc {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  /* service page */
+  .service-section {
+    margin: 0px;
+    padding: 0px 40px;
+  }
+  .service-header {
+    display: inline;
+  }
 
- .main-header-service,
-.desc-header-service {
-  display: flex;
-  align-items: center;
-  padding: 0px;
-  width: 100%;
-}
-.header-service{
-font-size: 34px;
-padding-bottom: 20px;
-}
-.desc-head {
-  font-size: 16px;
-}
-/* service image */
-.Thumbnail-image-service{
-  width: 100%;
-}
+  .main-header-service,
+  .desc-header-service {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+  }
+  .header-service {
+    font-size: 34px;
+    padding-bottom: 20px;
+  }
+  .desc-head {
+    font-size: 16px;
+  }
+  /* service image */
+  .Thumbnail-image-service {
+    width: 100%;
+  }
 
-/* Question-page */
-.question-page{
-  padding: 50px 40px 40px;
-}
-.question-container-header-questions{
-  display: inline;
-}
-.question-container{
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-}
-.main-head-questions{
-  font-size: 34px;
-}
-.questions-desc{
-  width: 100%;
-}
-.question-dropdown{
-  font-size: 20px;
-  word-spacing: 0px;
-}
-/* .question-page-logo-container {
+  /* Question-page */
+  .question-page {
+    padding: 50px 40px 40px;
+  }
+  .question-container-header-questions {
+    display: inline;
+  }
+  .question-container {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .main-head-questions {
+    font-size: 34px;
+  }
+  .questions-desc {
+    width: 100%;
+  }
+  .question-dropdown {
+    font-size: 20px;
+    word-spacing: 0px;
+  }
+  /* .question-page-logo-container {
   padding: 40px 10px 0px;
   display: inline;
   justify-content: space-evenly;
@@ -1334,89 +1399,87 @@ padding-bottom: 20px;
   height: 50px;
 } */
 
-/* health care page */
-.healthcare-section{
-  margin-bottom: 40px;
-}
-.main-header-wellness{
-  padding-top: 20px;
-  font-size: 36px;
-}
+  /* health care page */
+  .healthcare-section {
+    margin-bottom: 40px;
+  }
+  .main-header-wellness {
+    padding-top: 20px;
+    font-size: 36px;
+  }
 
-/* Wellness Blog */
-.wellness-header{
-  min-height: 60px;
-}
-.welcome-blog-page{
-  margin-bottom: 40px;
-  padding: 0px 20px;
-}
-.image-desc-wellness-blog{
-  display: inline;
-  margin: 0px;
+  /* Wellness Blog */
+  .wellness-header {
+    min-height: 60px;
+  }
+  #welcome-blog-page {
+    margin-bottom: 40px;
+    padding: 0px 20px;
+  }
+  .image-desc-wellness-blog {
+    display: inline;
+    margin: 0px;
+  }
+  .wellness-container-img {
+    width: 100%;
+    padding: 20px;
+  }
+  .view-more-wellness {
+    margin-top: 30px;
+  }
+  /* Specialist and Price guide */
+  .team-price-container {
+    display: inline;
+  }
+  .pcont {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    margin: 20px;
+  }
+  .main-header-team {
+    margin: 70px 0px 10px;
+  }
+  .desc-team {
+    margin: 10px 0px 70px;
+  }
 
-}
-.wellness-container-img {
-  width: 100%;
-  padding: 20px;
-}
-.view-more-wellness{
-  margin-top: 30px;
-}
-/* Specialist and Price guide */
-.team-price-container{
-  display: inline;
-}
-.pcont{
-  width: 100%;
-  height: auto;
-  padding: 50px;
-  margin: 20px;
-}
-.main-header-team{
-  margin: 70px 0px 10px;
-}
-.desc-team{
-  margin: 10px 0px 70px
-}
-
-/* footer section */
-.footer-section{
-  padding: 30px 40px 0px;
-}
-.footer-header{
-  display: inline;
- border-bottom: none;
-}
-.main-header-footer{
-  width: 100%;
-  font-size: 28px;
-  text-align: center;
-}
-.input-footer{
-  width: 100%;
-  padding: 20px;
-}
-.email-btn{
-  width: 400px;;
-}
-.footer-description{
-  display: inline;
-  text-align: center;
-  padding: 100px 0px;
-}
-.logo-icons-footer{
-  display: inline;
-}
-.column-header-footer{
-  font-size: 18px;
-  font-weight: 600;
-}
-.links-li-footer{
-  font-size: 16px;
-}
-.footer-desc-container {
-  display: inline;
-}
-
+  /* footer section */
+  .footer-section {
+    padding: 30px 40px 0px;
+  }
+  .footer-header {
+    display: inline;
+    border-bottom: none;
+  }
+  .main-header-footer {
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+  }
+  .input-footer {
+    width: 100%;
+    padding: 20px;
+  }
+  .email-btn {
+    width: 400px;
+  }
+  .footer-description {
+    display: inline;
+    text-align: center;
+    padding: 100px 0px;
+  }
+  .logo-icons-footer {
+    display: inline;
+  }
+  .column-header-footer {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .links-li-footer {
+    font-size: 16px;
+  }
+  .footer-desc-container {
+    display: inline;
+  }
 }
